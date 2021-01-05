@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.container {
+    display: flex;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    margin: 250px 300px 200px 300px;
+    padding: 60px 100px;
+    width: 50%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.container:hover .icon {
+    /* transform: rotate(0); */
+
+    animation: moveIconButton .4s ease-in-out;
+    animation-fill-mode: both;
+    transition: 1s;
+}
+
+.icon {
+    background-color: lightgray;
+    padding: 25px;
+    transform: rotate(20deg);
+    border-radius: 5px;
+}
+
+.text {
+    padding-left: 80px;
+}
+
+.sub-text {
+    font-weight: bold;
+}
+
+.link {
+    text-decoration: none;
+    background-color: lightblue;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 10px;
+    color: #000;
+}
+
+a:hover {
+    background-color: blue;
+    color: #fff;
+    border: 1px solid blue;
+}
+
+
+@keyframes moveIconButton {
+    from {
+        transform: rotate(20deg);
+    }
+    to {
+        transform: rotate(0);
+    }
+}
